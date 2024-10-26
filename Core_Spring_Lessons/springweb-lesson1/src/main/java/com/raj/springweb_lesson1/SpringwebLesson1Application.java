@@ -15,9 +15,5 @@ public class SpringwebLesson1Application {
 		myComponent.print(myComponent.greet("Ruban Raj"));
 	}
 
-	//	// Spring instance creation called Bean for DI
-	//	@Bean
-	//	public MyComponent myComponent() {
-	//		return new MyComponent();
-	//	}
+
 }

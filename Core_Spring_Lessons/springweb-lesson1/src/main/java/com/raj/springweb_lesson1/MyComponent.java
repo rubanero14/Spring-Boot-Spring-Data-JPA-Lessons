@@ -3,7 +3,7 @@ package com.raj.springweb_lesson1;
 import org.springframework.stereotype.*;
 
 // Marking a class as Spring Bean using @Component, @Repository or @Service
-@Component
+// @Component
 // @Repository
 // @Service
 public class MyComponent {
