@@ -7,7 +7,7 @@ import org.springframework.context.annotation.*;
 @Configuration
 public class ApplicationConfig {
     	// Spring instance creation called Bean for DI
-    	@Bean
+    	@Bean("myFirstBean")
     	public MyComponent myComponent() {
     		return new MyComponent();
     	}

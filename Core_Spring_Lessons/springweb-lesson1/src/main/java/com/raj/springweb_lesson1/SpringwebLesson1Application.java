@@ -10,7 +10,8 @@ public class SpringwebLesson1Application {
 	public static void main(String[] args) {
 		var ctx = SpringApplication.run(SpringwebLesson1Application.class, args);
 
-		MyComponent myComponent = ctx.getBean("myComponent", MyComponent.class);
+		MyComponent myComponent = ctx.getBean("myFirstBean", MyComponent.class);
+
 		myComponent.print("System online...");
 		myComponent.print(myComponent.greet("Ruban Raj"));
 	}
