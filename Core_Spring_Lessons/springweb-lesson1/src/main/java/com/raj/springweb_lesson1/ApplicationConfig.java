@@ -9,6 +9,6 @@ public class ApplicationConfig {
     	// Spring instance creation called Bean for DI
     	@Bean("myFirstBean")
     	public MyComponent myComponent() {
-    		return new MyComponent();
+    		return new MyComponent("Ruban Raj");
     	}
 }
