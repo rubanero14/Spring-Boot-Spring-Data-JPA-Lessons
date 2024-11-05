@@ -13,7 +13,7 @@ public class SpringwebLesson1Application {
 		MyComponent myComponent = ctx.getBean("myFirstBean", MyComponent.class);
 
 		myComponent.print("System online...");
-		myComponent.print(myComponent.greet("Ruban Raj"));
+		myComponent.print(myComponent.greet("Ruban Raj", "Main Applicationfile"));
 	}
 
 
