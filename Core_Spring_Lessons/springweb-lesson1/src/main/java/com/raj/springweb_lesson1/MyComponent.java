@@ -14,7 +14,7 @@ public class MyComponent {
     public void print(String str) {
         System.out.println(str);
     }
-    public String greet(String name, String beanName) {
-        return "Good day, " + name + " from " + beanName + " class done by " + myName + ".";
+    public void greet(String name, String beanName) {
+        System.out.println("Good day " + name + "! Bean invoked from " + beanName + " class done by " + myName + ".");
     }
 }
