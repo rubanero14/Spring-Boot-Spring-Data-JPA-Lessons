@@ -1,1 +1,4 @@
 https://www.youtube.com/watch?v=5rNk7m_zlAg&t=4860s
+
+USE SITE BELOW TO TRACK YOUR PROGRESS
+https://rubanero14.github.io/learn-typescript-101/
