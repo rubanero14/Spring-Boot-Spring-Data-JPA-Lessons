@@ -1,5 +1,6 @@
 package com.raj.springweb_lesson1;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.*;
 
 
@@ -11,7 +12,15 @@ import org.springframework.context.annotation.*;
 public class ApplicationConfig {
     	// Spring instance creation called Bean for DI
     	@Bean("myFirstBean")
-    	public MyComponent myComponent() {
-    		return new MyComponent("Ruban Raj");
+		@Primary
+		@Qualifier("BeanOne")
+    	public MyComponent myFirstBean() {
+    		return new MyComponent("Ruban Raj => First Bean");
     	}
+
+		@Bean("mySecondBean")
+		@Qualifier("BeanTwo")
+		public MyComponent mySecondBean() {
+			return new MyComponent("Ruban Raj => Second Bean");
+		}
 }
