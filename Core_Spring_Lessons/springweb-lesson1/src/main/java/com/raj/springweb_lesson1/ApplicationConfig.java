@@ -12,15 +12,23 @@ import org.springframework.context.annotation.*;
 public class ApplicationConfig {
     	// Spring instance creation called Bean for DI
     	@Bean("myFirstBean")
-		@Primary
-		@Qualifier("BeanOne")
+		//@Primary
+		// @Qualifier("BeanOne")
     	public MyComponent myFirstBean() {
     		return new MyComponent("Ruban Raj => First Bean");
     	}
 
 		@Bean("mySecondBean")
-		@Qualifier("BeanTwo")
+		// @Primary
+		// @Qualifier("BeanTwo")
 		public MyComponent mySecondBean() {
 			return new MyComponent("Ruban Raj => Second Bean");
+		}
+
+		@Bean("myThirdBean")
+		@Primary
+		// @Qualifier("BeanThree")
+		public MyComponent myThirdBean() {
+			return new MyComponent("Ruban Raj => Third Bean");
 		}
 }

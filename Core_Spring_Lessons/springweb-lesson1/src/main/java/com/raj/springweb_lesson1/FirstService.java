@@ -11,7 +11,7 @@ public class FirstService {
     private final MyComponent myComponent;
 
     // @Autowired / without autowired annotation, spring framework will inject dependencies using constructor injection as below
-    public FirstService(@Qualifier("BeanTwo") MyComponent myComponent) {
+    public FirstService( MyComponent myComponent) {
         this.myComponent = myComponent;
     }
 
